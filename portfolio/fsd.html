@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Development</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fsd.css">
+	<script src="modernizr.custom.fsd.js"></script>
+
+
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<ul class="header-content">
+			<li id="theme-switcher-light">
+				<img src="full-moon.png" class="theme-switcher" id="moon" alt="theme-switcher">
+				<img src="sun.png" class="theme-switcher hide" id="sun" alt="theme-switcher">
+			</li>
+		</ul>
+
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="starter.png" alt="iPhone" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Hors Devours</span><br>Introduction to full stack development</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="soup.png" alt="iPad Mini" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Soup</span><br>Introduction to APIs</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="fish.png" alt="MacBook" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Fish Dish</span><br>Structuring data using DBMS</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="meat.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Meat Dish</span><br>Cutting through the basics of Mongoose</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="main.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Main Course</span><br>Diving deeper into FSD as a whole</h2>
+
+			</div>
+			<div class="slide" data-content="content-6">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="salad.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Salad</span><br>Dressing the project in React
+				</h2>
+      </div>
+      
+      <div class="slide" data-content="content-7">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="dessert.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Dessert</span><br>Finishing the project with treats and sprinkles
+				</h2>
+      </div>
+      
+      <div class="slide" data-content="content-8">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="drink.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Drink</span><br>Deploying our website : Github pages and Netlify
+				</h2>
+			</div>
+
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span
+						class="text-hidden">Previous Project</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View
+						details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span
+						class="text-hidden">Next Project</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+
+		<!--Bottom links-->
+		<ul class="bottom-links-services">
+			<li>
+				<a class='left-arrow light-links' href='home.html' id='home'>home</a>
+			</li>
+			<li>
+				<a class='right-arrow light-links' href='webdev.html' id='clients'>webdev</a>
+			</li>
+		</ul>
+
+
+
+		<!--Slider content-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="starter.png"
+					alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2>Introduction to full stack development</h2>
+					<h3>Kickstart your full stack development journey</h3>
+					<p>Topics covered in the live discussion: </p><br>
+					<ul>
+						<li>What is full stack development? What are its building blocks?</li><br>
+						<li>What if I don't know web development? What should I do?</li><br>
+						<li>Sneak peek at our project</li><br>
+						<li>How does the internet work?</li><br>
+						<li>Q&A session to clear all your doubts</li><br>
+					</ul>
+					<p><a href="mailto:harshshreyraj@gmail.com">Have feedbacks? Write a mail to your captain</a>
+					</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="soup.png"
+					alt="iPad Mini Content" />
+				<div class="content__item-inner">
+					<h2>Introduction to APIs</h2>
+					<h3>How do applications communicate with each other?</h3>
+					<p>Topics covered in the live discussion: </p><br>
+					<ul>
+						<li>What are APIs?</li><br>
+						<li>Creating our very own server</li><br>
+						<li>Creating your very first set of APIs in express.js</li>
+						<li>Q&A session to clear all your doubts</li><br>
+					</ul>
+					<p><a href="mailto:harshshreyraj@gmail.com">Have feedbacks? Write a mail to your captain</a>
+					</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="fish.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>Introduction to NoSQL DBMS</h2>
+						<h3>Creating the structure of the workshop's database</h3>
+						<p>Topics covered in the live discussion: </p><br>
+						<ul>
+							<li>What are databases? Why do we need them?</li><br>
+							<li>Introduction to mongoDB and mongoose</li><br>
+							<li>Finishing our API and creating our first database model</li>
+							<li>Q&A session to clear all your doubts</li><br>
+						</ul>
+						<p><a href="mailto:harshshreyraj@gmail.com">Have feedbacks? Write a mail to your captain</a>
+						</p>
+					</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="meat.png"
+					alt="iMac Content" />
+				<div class="content__item-inner">
+					<h2>Introduction to Mongoose</h2>
+					<h3>No, it's not the animal</h3>
+					<p>Topics covered in the live discussion: </p><br>
+						<ul>
+							<li>Overview of mongoose</li><br>
+							<li>Replacing the initial data structure in our project with mongoose documents.</li><br>
+							<li>Q&A session to clear all your doubts</li><br>
+						</ul>
+						<p><a href="mailto:harshshreyraj@gmail.com">Have feedbacks? Write a mail to your captain</a>
+						</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="main.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>What's more in FSD</h2>
+						<h3>Looking at the family tree of full stack development</h3>
+						<p>Topics covered in the live discussion: </p><br>
+							<ul>
+								<li>Various branches and technologies used in full stack development</li><br>
+								<li>Setting up the frontend of our workshop project</li><br>
+								<li>Q&A session to clear all your doubts</li><br>
+							</ul>
+							<p><a href="mailto:harshshreyraj@gmail.com">Have feedbacks? Write a mail to your captain</a>
+							</p>
+					</div>
+			</div>
+			<div class="content__item" id="content-6">
+				<img class="content__item-img rounded-right" src="salad.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>Connecting our frontend to the backend</h2>
+						<h3>Briding the gap between users and servers</h3>
+						<p>Topics covered in the live discussion: </p><br>
+							<ul>
+								<li>How to connect the frontend of the application to servers</li><br>
+								<li>Making get and post requests to our server</li><br>
+								<li>Q&A session to clear all your doubts</li><br>
+							</ul>
+							<p><a href="mailto:harshshreyraj@gmail.com">Have feedbacks? Write a mail to your captain</a>
+							</p>
+					</div>
+      </div>
+      <div class="content__item" id="content-7">
+				<img class="content__item-img rounded-right" src="dessert.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>Introduction to CSS in React</h2>
+						<h3>Adding styles to our website to make it look more beautiful</h3>
+						<p>Topics covered in the live discussion: </p><br>
+							<ul>
+								<li>How to add stlyes to HTML elements in React</li><br>
+								<li>Quick overview of CSS</li><br>
+								<li>Q&A session to clear all your doubts</li><br>
+							</ul>
+							<p><a href="mailto:harshshreyraj@gmail.com">Have feedbacks? Write a mail to your captain</a>
+							</p>
+					</div>
+      </div>
+      <div class="content__item" id="content-8">
+				<img class="content__item-img rounded-right" src="drink.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>Career talks, next steps and deploying your website</h2>
+						<h3>What comes after the workshop and after you're done developing your website</h3>
+						<p>Topics covered in the live discussion: </p><br>
+							<ul>
+								<li>My journey from a noob to a dude</li><br>
+								<li>My hackathon projects</li><br>
+								<li>Deploying a website on various platforms ( FOR FREE )!</li><br>
+								<li>Q&A session on careers and next steps</li><br>
+							</ul>
+							<p><a href="mailto:harshshreyraj@gmail.com">Have feedbacks? Write a mail to your captain</a>
+							</p>
+					</div>
+			</div>
+
+
+
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close
+					content</span></button>
+		</section>
+	</div>
+
+	<script src="classie.fsd.js"></script>
+	<script src="dynamic.min.fsd.js"></script>
+	<script src="main.fsd.js"></script>
+
+
+	<!-- For the demo ad only -->
+	<script src="demoad.fsd.js"></script>
+	<script src="index.fsd.js"></script>
+
+</body>
+
+</html>

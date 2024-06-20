@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163773895-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163773895-3');
+    </script>
+
+    <title>SR : Home</title>
+</head>
+
+<body>
+    <div class="home-section" id="home-section">
+        <!--Navigation bars-->
+        <ul class="side-nav" id="side-nav">
+            <li><a href='webdev.html'> web dev</a></li>
+            <li><a href="#"> home</a></li>
+            <li><a href='fsd.html'>full stack</a></li>
+        </ul>
+        <ul class="top-nav">
+            <li>
+                <img src="full-moon.png" alt="moon" class="theme-switcher" id="moon">
+                <img src="sun.png" alt="sun" class="theme-switcher hide" id="sun">
+            </li>
+            <li>
+                <a href="#" class="faq" id="notes">NOTES</a>
+            </li>
+        </ul>
+        <ul class="bottom-nav">
+            <li>
+                <i class="fa fa-instagram" id="insta" aria-hidden="true"><a
+                        href="https://www.instagram.com/shrey_anraj/">@shrey_anraj</a></i>
+            </li>
+            <li>
+                <i class="fa fa-github" id="insta" aria-hidden="true"><a
+                        href="https://github.com/sHreyanrj">@shreyan_raj</a></i>
+            </li>
+        </ul>
+        <!--Text container-->
+        <div class="text-container" id="text-container">
+            <h1>Hi, I am Shreyan Raj</h1>
+            <p>SME, Me as : Web Dev | FSD</p>
+            <h5>Select your workshop to see a
+                breakdown of what we are going to do in
+                the Live Discussions. <br><br><br>Let's have fun and learn something new!! </h5>
+        </div>
+
+        <!-- Images -->
+        <img src="html.png" class="html-img" alt="image of web design" id="light-html">
+        <img src="css.png" class="css-img" alt="image of web design" id="light-css">
+        <img src="design.png" class="design-img" alt="image of web design" id="light-design">
+
+
+        <img src="html-dark.png" class="html-img hide" alt="image of web design" id="dark-html">
+        <img src="css-dark.png" class="css-img hide" alt="image of web design" id="dark-css">
+        <img src="design-dark.png" class="design-img hide" alt="image of web design" id="dark-design">
+
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>
